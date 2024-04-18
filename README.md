@@ -43,6 +43,7 @@ The application will retrieve the repository contents, parse the file extensions
 - Node.js
 - GitHub account with access to the desired repository
 - Github personal access token
+- Add your personal access token onto .env file. if it's not created, mv .env.development to .env
 
 ## License
 
@@ -88,6 +89,10 @@ Contributions are welcome! Please feel free to open an issue or submit a pull re
 - **test**: Run tests with coverage reporting.
   - Command: `npm run test `
 
+## Screenshot
+
 ![GitHub Repository File Extensions Counter Screenshot](docs/screenshot.png)
+
+## Dependency graph
 
 ![Dependecies Graph](docs/dependencies.svg)
