@@ -16,7 +16,7 @@ To use the GitHub Repository File Extensions Counter, follow these steps:
 
 1. **Clone the Repository:**
    Clone the repository to your local machine using the following command:
-   `git clone https://github.com/yourusername/github-file-extensions-counter.git`
+   `git clone https://github.com/pdr0/zinklar-fe.git`
 
 2. **Install Dependencies:**
    Navigate to the project directory and install the necessary dependencies:
