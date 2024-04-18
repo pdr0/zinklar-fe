@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# GitHub Repository File Extensions Counter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The GitHub Repository File Extensions Counter is a small application designed to provide insights into the distribution of file extensions within a specified GitHub repository. By providing the owner's username and the repository name, the application fetches the repository's contents from the GitHub API and generates a list of file extensions along with their respective counts.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Fetches repository contents from GitHub API.
+- Parses file extensions and counts their occurrences.
+- Displays a list of file extensions and their counts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To use the GitHub Repository File Extensions Counter, follow these steps:
 
-### `npm test`
+1. **Clone the Repository:**
+   Clone the repository to your local machine using the following command:
+   `git clone https://github.com/yourusername/github-file-extensions-counter.git`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install Dependencies:**
+   Navigate to the project directory and install the necessary dependencies:
+   cd github-file-extensions-counter
+   pnpm i
 
-### `npm run build`
+3. **Run the Application:**
+   !Keep in mind you need to add your access token onto .env file!
+   Run the application:
+   `npm run start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **View Results:**
+   Once the application has completed execution, it will display a list of file extensions along with their counts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Example
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Consider a GitHub repository owned by `exampleuser` with the name `example-repo`. To analyze the file extensions in this repository, put the following repo url onto the input field:
+`https://github.com/pdr0/git-issue-explorer`
 
-### `npm run eject`
+The application will retrieve the repository contents, parse the file extensions, and display the results.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Requirements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- GitHub account with access to the desired repository
+- Github personal access token
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Frontend
 
-### Analyzing the Bundle Size
+- **React**: A JavaScript library for building user interfaces.
+  - Version: ^18.2.0
+- **React DOM**: React package for working with the DOM.
+  - Version: ^18.2.0
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### HTTP Requests
 
-### Making a Progressive Web App
+- **Axios**: Promise-based HTTP client for the browser and Node.js.
+  - Version: ^0.26.1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Testing
 
-### Advanced Configuration
+- **React Testing Library**: Testing utilities for React components.
+  - Version: ^13.4.0
+  - **@testing-library/react-hooks**: Custom hooks testing utilities.
+    - Version: ^8.0.1
+  - **@testing-library/jest-dom**: Custom Jest matchers for DOM elements.
+    - Version: ^5.17.0
+  - **@testing-library/user-event**: Simulate user events for testing.
+    - Version: ^13.5.0
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Scripts
 
-### Deployment
+- **start**: Start the development server.
+  - Command: `npm run start`
+- **build**: Build the application for production.
+  - Command: `npm run build`
+- **test**: Run tests with coverage reporting.
+  - Command: `npm run test `
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![GitHub Repository File Extensions Counter Screenshot](docs/screenshot.png)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Dependecies Graph](docs/dependencies.svg)

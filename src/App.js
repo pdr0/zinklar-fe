@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/Header';
+import { FilesCounter } from './components/gitHubFilesCounter/FilesCounter';
+import './styles.css';
 
 function App() {
+  const { REACT_APP_ACCESS_TOKEN } = process.env;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header>
+        <h1>Github Extension Counter</h1>
+      </Header>
+      <FilesCounter token={REACT_APP_ACCESS_TOKEN} />
     </div>
   );
 }
